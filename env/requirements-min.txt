@@ -1,0 +1,28 @@
+# Minimal CPU-only deps for MemoryAgentBench with LC, BM25, embedding RAG (OpenAI embeddings) and vendored Mem0.
+# Tested by env/setup_and_smoke.sh (no API calls). Pin after first successful install.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+transformers
+tiktoken
+openai
+anthropic
+datasets
+pyyaml
+python-dotenv
+tqdm
+numpy<2
+pandas
+nltk
+editdistance
+rouge_score
+rank_bm25
+langchain
+langchain-community
+langchain-core
+langchain-openai
+faiss-cpu
+qdrant_client
+pytz
+pydantic
+google-genai
+posthog

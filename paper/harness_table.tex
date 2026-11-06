@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering\footnotesize
+\begin{tabularx}{\linewidth}{@{}l X p{2.2cm} p{2.0cm} p{2.0cm}@{}}
+\toprule
+ID & Finding (public harness, commit 5380260) & Affects & Effect & Evidence \\
+\midrule
+A1 & Mem0 memorizes under context\_None, searches context\_i $\rightarrow$ retrieves nothing & Mem0 & no retrieval & executed (real Mem0) \\
+A2 & Cognee search ignores dataset key $\rightarrow$ a query on context i also searches earlier contexts (0..i) & Cognee & cross-context leakage & stubbed execution \\
+A3 & Zep reads a graph that was never created (graph\_None written, graph\_0 read) & Zep & likely crash / empty & code reading \\
+B1 & RAG chunk store silently drops oldest chunks above 250--300K tokens & 4 systems & evidence lost & measured \\
+B2 & Long-context truncation keeps only the tail (128K models keep 8--61\% of long main-tier contexts) & LC (GPT-4o-mini) & evidence lost & measured \\
+B3 & Zep ingests only the first 9,998 chars of each chunk (~50--63\% stored) & Zep & evidence lost & code + measured \\
+B4 & Retrieval/reader settings differ from configs (RAPTOR k=4 not 10; HippoRAG reader sees 5 of 10; fixed readers) & RAPTOR, HippoRAG-v2, Self-RAG & fewer passages & code reading \\
+C1 & DetQA exact match $\approx$0 for answers in the prompted JSON format; 5/71 gold malformed & 14 systems & false negatives & offline run \\
+C2 & ICL exact match rejects the instructed 'label: N' format & 14 systems & false negatives & code + README \\
+C3 & Substring match credits hedged FC answers and 'I don't know' vs gold 'no' (12/100 RULER-QA2); some systems have no output cap & 7 systems & false positives & code reading \\
+D1 & All 32 configs set temperature 0.7 (a few systems override it); scores are single runs & 13 systems & unreported variance & configs (32/32) \\
+E1 & LongMemEval judge uses unpinned gpt-4o; stale verdicts reused & 14 systems & judge drift & code reading \\
+\bottomrule
+\end{tabularx}
+\caption{Harness findings by effect and strength of evidence. Effects on the \emph{published} MAB numbers are not established: the original runs may have used different code (Section~\ref{sec:harness}).}
+\label{tab:harness}
+\end{table}

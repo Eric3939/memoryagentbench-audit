@@ -1,0 +1,953 @@
+
+======== 1. RAG chunk store: chunks kept by _handle_rag_agent (oldest dropped when n*chunk_size > limit) ========
+10/15/2026 04:14:20 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:20 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 03:58:16 2026).
+10/15/2026 04:14:20 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 03:58:16 2026).
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filter:   0%|          | 0/22 [00:00<?, ? examples/s]Filter: 100%|██████████| 22/22 [00:00<00:00, 320.18 examples/s]
+10/15/2026 04:14:21 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:21 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:20 2026).
+10/15/2026 04:14:21 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:20 2026).
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+[RULER-QA1] done
+10/15/2026 04:14:21 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:21 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:20 2026).
+10/15/2026 04:14:21 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:20 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filter:   0%|          | 0/22 [00:00<?, ? examples/s]Filter: 100%|██████████| 22/22 [00:00<00:00, 469.26 examples/s]
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'chunk': 4096, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284950, 'chunks_total': 106, 'chunks_kept': 69, 'frac_tokens_kept': 0.65}
+{'dataset': 'RULER-QA2', 'chunk': 4096, 'system': 'Structure_rag_raptor', 'limit': 279750, 'chunks_total': 106, 'chunks_kept': 68, 'frac_tokens_kept': 0.64}
+{'dataset': 'RULER-QA2', 'chunk': 4096, 'system': 'Agentic_memory_self_rag', 'limit': 279750, 'chunks_total': 106, 'chunks_kept': 68, 'frac_tokens_kept': 0.64}
+{'dataset': 'RULER-QA2', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249450, 'chunks_total': 106, 'chunks_kept': 60, 'frac_tokens_kept': 0.564}
+10/15/2026 04:14:22 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:22 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:21 2026).
+10/15/2026 04:14:22 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:21 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'chunk': 512, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284950, 'chunks_total': 875, 'chunks_kept': 556, 'frac_tokens_kept': 0.634}
+{'dataset': 'RULER-QA2', 'chunk': 512, 'system': 'Structure_rag_raptor', 'limit': 279750, 'chunks_total': 875, 'chunks_kept': 546, 'frac_tokens_kept': 0.623}
+{'dataset': 'RULER-QA2', 'chunk': 512, 'system': 'Agentic_memory_self_rag', 'limit': 279750, 'chunks_total': 875, 'chunks_kept': 546, 'frac_tokens_kept': 0.623}
+{'dataset': 'RULER-QA2', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249450, 'chunks_total': 875, 'chunks_kept': 487, 'frac_tokens_kept': 0.556}
+[RULER-QA2] done
+10/15/2026 04:14:23 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:23 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:21 2026).
+10/15/2026 04:14:23 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:21 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filter:   0%|          | 0/22 [00:00<?, ? examples/s]Filter: 100%|██████████| 22/22 [00:00<00:00, 492.54 examples/s]
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Dataset length: 5, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'chunk': 4096, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284960, 'chunks_total': 671, 'chunks_kept': 345, 'frac_tokens_kept': 0.512}
+{'dataset': 'EventQA-full', 'chunk': 4096, 'system': 'Structure_rag_raptor', 'limit': 279760, 'chunks_total': 671, 'chunks_kept': 340, 'frac_tokens_kept': 0.505}
+{'dataset': 'EventQA-full', 'chunk': 4096, 'system': 'Agentic_memory_self_rag', 'limit': 279760, 'chunks_total': 671, 'chunks_kept': 340, 'frac_tokens_kept': 0.505}
+{'dataset': 'EventQA-full', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249460, 'chunks_total': 671, 'chunks_kept': 300, 'frac_tokens_kept': 0.445}
+10/15/2026 04:14:27 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:27 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:23 2026).
+10/15/2026 04:14:27 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:23 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Dataset length: 5, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'chunk': 512, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284960, 'chunks_total': 5517, 'chunks_kept': 2780, 'frac_tokens_kept': 0.505}
+{'dataset': 'EventQA-full', 'chunk': 512, 'system': 'Structure_rag_raptor', 'limit': 279760, 'chunks_total': 5517, 'chunks_kept': 2730, 'frac_tokens_kept': 0.496}
+{'dataset': 'EventQA-full', 'chunk': 512, 'system': 'Agentic_memory_self_rag', 'limit': 279760, 'chunks_total': 5517, 'chunks_kept': 2730, 'frac_tokens_kept': 0.496}
+{'dataset': 'EventQA-full', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249460, 'chunks_total': 5517, 'chunks_kept': 2435, 'frac_tokens_kept': 0.443}
+[EventQA-full] done
+10/15/2026 04:14:35 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:35 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:23 2026).
+10/15/2026 04:14:35 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:23 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filter:   0%|          | 0/22 [00:00<?, ? examples/s]Filter: 100%|██████████| 22/22 [00:00<00:00, 488.70 examples/s]
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Dataset length: 5, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'chunk': 4096, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284950, 'chunks_total': 448, 'chunks_kept': 345, 'frac_tokens_kept': 0.768}
+{'dataset': 'LME-S*', 'chunk': 4096, 'system': 'Structure_rag_raptor', 'limit': 279750, 'chunks_total': 448, 'chunks_kept': 340, 'frac_tokens_kept': 0.757}
+{'dataset': 'LME-S*', 'chunk': 4096, 'system': 'Agentic_memory_self_rag', 'limit': 279750, 'chunks_total': 448, 'chunks_kept': 340, 'frac_tokens_kept': 0.757}
+{'dataset': 'LME-S*', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249450, 'chunks_total': 448, 'chunks_kept': 300, 'frac_tokens_kept': 0.667}
+10/15/2026 04:14:38 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:38 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:36 2026).
+10/15/2026 04:14:38 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:36 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Dataset length: 5, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'chunk': 512, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284950, 'chunks_total': 3753, 'chunks_kept': 2780, 'frac_tokens_kept': 0.74}
+{'dataset': 'LME-S*', 'chunk': 512, 'system': 'Structure_rag_raptor', 'limit': 279750, 'chunks_total': 3753, 'chunks_kept': 2730, 'frac_tokens_kept': 0.726}
+{'dataset': 'LME-S*', 'chunk': 512, 'system': 'Agentic_memory_self_rag', 'limit': 279750, 'chunks_total': 3753, 'chunks_kept': 2730, 'frac_tokens_kept': 0.726}
+{'dataset': 'LME-S*', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249450, 'chunks_total': 3753, 'chunks_kept': 2435, 'frac_tokens_kept': 0.648}
+[LME-S*] done
+10/15/2026 04:14:44 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:44 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:36 2026).
+10/15/2026 04:14:44 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:36 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filter:   0%|          | 0/8 [00:00<?, ? examples/s]Filter: 100%|██████████| 8/8 [00:00<00:00, 239.68 examples/s]
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249490, 'chunks_total': 67, 'chunks_kept': 60, 'frac_tokens_kept': 0.895}
+10/15/2026 04:14:45 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:45 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:44 2026).
+10/15/2026 04:14:45 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:44 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249490, 'chunks_total': 537, 'chunks_kept': 487, 'frac_tokens_kept': 0.907}
+[FC-SH-262K] done
+10/15/2026 04:14:46 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:46 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:44 2026).
+10/15/2026 04:14:46 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:44 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filter:   0%|          | 0/8 [00:00<?, ? examples/s]Filter: 100%|██████████| 8/8 [00:00<00:00, 332.24 examples/s]
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249490, 'chunks_total': 67, 'chunks_kept': 60, 'frac_tokens_kept': 0.895}
+10/15/2026 04:14:47 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:47 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:46 2026).
+10/15/2026 04:14:47 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:46 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249490, 'chunks_total': 537, 'chunks_kept': 487, 'frac_tokens_kept': 0.907}
+[FC-MH-262K] done
+10/15/2026 04:14:48 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:48 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:46 2026).
+10/15/2026 04:14:48 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:46 2026).
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filter:   0%|          | 0/6 [00:00<?, ? examples/s]Filter: 100%|██████████| 6/6 [00:00<00:00, 206.09 examples/s]
+10/15/2026 04:14:48 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:48 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+10/15/2026 04:14:48 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+[ICL-banking77] done
+10/15/2026 04:14:48 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:48 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+10/15/2026 04:14:48 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filter:   0%|          | 0/110 [00:00<?, ? examples/s]Filter: 100%|██████████| 110/110 [00:00<00:00, 1434.65 examples/s]
+10/15/2026 04:14:50 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:50 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+10/15/2026 04:14:50 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Dataset length: 10, each sample has 6 qa pairs
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Dataset length: 10, each sample has 6 qa pairs
+[DetQA] done
+10/15/2026 04:14:53 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:53 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+10/15/2026 04:14:53 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:48 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filter:   0%|          | 0/110 [00:00<?, ? examples/s]Filter: 100%|██████████| 110/110 [00:00<00:00, 1154.61 examples/s]
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 10 samples
+Dataset length: 10, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'chunk': 4096, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 283800, 'chunks_total': 520, 'chunks_kept': 432, 'frac_tokens_kept': 0.829}
+{'dataset': 'InfBench-Sum', 'chunk': 4096, 'system': 'Structure_rag_raptor', 'limit': 278600, 'chunks_total': 520, 'chunks_kept': 430, 'frac_tokens_kept': 0.825}
+{'dataset': 'InfBench-Sum', 'chunk': 4096, 'system': 'Agentic_memory_self_rag', 'limit': 278600, 'chunks_total': 520, 'chunks_kept': 430, 'frac_tokens_kept': 0.825}
+{'dataset': 'InfBench-Sum', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 248300, 'chunks_total': 520, 'chunks_kept': 412, 'frac_tokens_kept': 0.79}
+10/15/2026 04:14:56 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:14:56 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:53 2026).
+10/15/2026 04:14:56 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:53 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 10 samples
+Dataset length: 10, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'chunk': 512, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 283800, 'chunks_total': 4236, 'chunks_kept': 3490, 'frac_tokens_kept': 0.825}
+{'dataset': 'InfBench-Sum', 'chunk': 512, 'system': 'Structure_rag_raptor', 'limit': 278600, 'chunks_total': 4236, 'chunks_kept': 3470, 'frac_tokens_kept': 0.821}
+{'dataset': 'InfBench-Sum', 'chunk': 512, 'system': 'Agentic_memory_self_rag', 'limit': 278600, 'chunks_total': 4236, 'chunks_kept': 3470, 'frac_tokens_kept': 0.821}
+{'dataset': 'InfBench-Sum', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 248300, 'chunks_total': 4236, 'chunks_kept': 3336, 'frac_tokens_kept': 0.789}
+[InfBench-Sum] done
+10/15/2026 04:15:01 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:01 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:53 2026).
+10/15/2026 04:15:01 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:14:53 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filter:   0%|          | 0/6 [00:00<?, ? examples/s]Filter: 100%|██████████| 6/6 [00:00<00:00, 196.52 examples/s]
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'chunk': 4096, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284700, 'chunks_total': 363, 'chunks_kept': 69, 'frac_tokens_kept': 0.189}
+{'dataset': 'Recsys', 'chunk': 4096, 'system': 'Structure_rag_raptor', 'limit': 279500, 'chunks_total': 363, 'chunks_kept': 68, 'frac_tokens_kept': 0.186}
+{'dataset': 'Recsys', 'chunk': 4096, 'system': 'Agentic_memory_self_rag', 'limit': 279500, 'chunks_total': 363, 'chunks_kept': 68, 'frac_tokens_kept': 0.186}
+{'dataset': 'Recsys', 'chunk': 4096, 'system': 'Structure_rag_graph_rag', 'limit': 249200, 'chunks_total': 363, 'chunks_kept': 60, 'frac_tokens_kept': 0.164}
+{'dataset': 'Recsys', 'chunk': 4096, 'system': 'Structure_rag_memo_rag', 'limit': 799500, 'chunks_total': 363, 'chunks_kept': 195, 'frac_tokens_kept': 0.537}
+10/15/2026 04:15:04 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:04 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:04 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'chunk': 512, 'system': 'Embedding_rag_text_embedding_3_small', 'limit': 284700, 'chunks_total': 2981, 'chunks_kept': 556, 'frac_tokens_kept': 0.186}
+{'dataset': 'Recsys', 'chunk': 512, 'system': 'Structure_rag_raptor', 'limit': 279500, 'chunks_total': 2981, 'chunks_kept': 545, 'frac_tokens_kept': 0.182}
+{'dataset': 'Recsys', 'chunk': 512, 'system': 'Agentic_memory_self_rag', 'limit': 279500, 'chunks_total': 2981, 'chunks_kept': 545, 'frac_tokens_kept': 0.182}
+{'dataset': 'Recsys', 'chunk': 512, 'system': 'Structure_rag_graph_rag', 'limit': 249200, 'chunks_total': 2981, 'chunks_kept': 486, 'frac_tokens_kept': 0.163}
+{'dataset': 'Recsys', 'chunk': 512, 'system': 'Structure_rag_memo_rag', 'limit': 799500, 'chunks_total': 2981, 'chunks_kept': 1561, 'frac_tokens_kept': 0.524}
+[Recsys] done
+
+======== 2. Long-context truncation (_truncate_context_if_needed keeps the TAIL) ========
+10/15/2026 04:15:14 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:14 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:14 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA1', 'model': 'gpt-4o-mini', 'ctx_tokens': 204548, 'limit': 123950, 'kept_tokens': 123950, 'frac_kept': 0.606, 'head_survives': False}
+10/15/2026 04:15:15 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:15 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:15 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA1', 'model': 'gpt-4.1-mini', 'ctx_tokens': 204548, 'limit': 989950, 'kept_tokens': 204548, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:15 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:15 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:15 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA1', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 204548, 'limit': 172950, 'kept_tokens': 172950, 'frac_kept': 0.846, 'head_survives': False}
+10/15/2026 04:15:16 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:16 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:16 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA1', 'model': 'gemini-2.0-flash', 'ctx_tokens': 204548, 'limit': 849950, 'kept_tokens': 204548, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:16 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:16 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:16 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'model': 'gpt-4o-mini', 'ctx_tokens': 435176, 'limit': 123950, 'kept_tokens': 123950, 'frac_kept': 0.285, 'head_survives': False}
+10/15/2026 04:15:17 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:17 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:17 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'model': 'gpt-4.1-mini', 'ctx_tokens': 435176, 'limit': 989950, 'kept_tokens': 435176, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:17 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:17 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:17 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 435176, 'limit': 172950, 'kept_tokens': 172950, 'frac_kept': 0.397, 'head_survives': False}
+10/15/2026 04:15:18 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:18 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:18 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'model': 'gemini-2.0-flash', 'ctx_tokens': 435176, 'limit': 849950, 'kept_tokens': 435176, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:19 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:19 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:19 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'model': 'gpt-4o-mini', 'ctx_tokens': 540041, 'limit': 123960, 'kept_tokens': 123960, 'frac_kept': 0.23, 'head_survives': False}
+10/15/2026 04:15:20 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:20 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:20 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'model': 'gpt-4.1-mini', 'ctx_tokens': 540041, 'limit': 989960, 'kept_tokens': 540041, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:21 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:21 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:21 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 540041, 'limit': 172960, 'kept_tokens': 172960, 'frac_kept': 0.32, 'head_survives': False}
+10/15/2026 04:15:22 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:22 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:22 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'model': 'gemini-2.0-flash', 'ctx_tokens': 540041, 'limit': 849960, 'kept_tokens': 540041, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:23 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:23 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:23 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'model': 'gpt-4o-mini', 'ctx_tokens': 359897, 'limit': 123950, 'kept_tokens': 123950, 'frac_kept': 0.344, 'head_survives': False}
+10/15/2026 04:15:23 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:23 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:24 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'model': 'gpt-4.1-mini', 'ctx_tokens': 359897, 'limit': 989950, 'kept_tokens': 359897, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:24 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:24 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:24 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 359897, 'limit': 172950, 'kept_tokens': 172950, 'frac_kept': 0.481, 'head_survives': False}
+10/15/2026 04:15:25 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:25 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:25 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'model': 'gemini-2.0-flash', 'ctx_tokens': 359897, 'limit': 849950, 'kept_tokens': 359897, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:25 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:25 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:25 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'model': 'gpt-4o-mini', 'ctx_tokens': 289505, 'limit': 123990, 'kept_tokens': 123990, 'frac_kept': 0.428, 'head_survives': False}
+10/15/2026 04:15:26 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:26 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:26 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'model': 'gpt-4.1-mini', 'ctx_tokens': 289505, 'limit': 989990, 'kept_tokens': 289505, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:27 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:27 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:27 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 289505, 'limit': 172990, 'kept_tokens': 172990, 'frac_kept': 0.598, 'head_survives': False}
+10/15/2026 04:15:28 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:28 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:28 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'model': 'gemini-2.0-flash', 'ctx_tokens': 289505, 'limit': 849990, 'kept_tokens': 289505, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:29 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:29 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:29 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'model': 'gpt-4o-mini', 'ctx_tokens': 289505, 'limit': 123990, 'kept_tokens': 123990, 'frac_kept': 0.428, 'head_survives': False}
+10/15/2026 04:15:30 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:30 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:30 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'model': 'gpt-4.1-mini', 'ctx_tokens': 289505, 'limit': 989990, 'kept_tokens': 289505, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:30 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:30 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:30 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 289505, 'limit': 172990, 'kept_tokens': 172990, 'frac_kept': 0.598, 'head_survives': False}
+10/15/2026 04:15:31 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:31 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:31 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'model': 'gemini-2.0-flash', 'ctx_tokens': 289505, 'limit': 849990, 'kept_tokens': 289505, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:32 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:32 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:32 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'ICL-banking77', 'model': 'gpt-4o-mini', 'ctx_tokens': 107311, 'limit': 123980, 'kept_tokens': 107311, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:33 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:33 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:33 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'ICL-banking77', 'model': 'gpt-4.1-mini', 'ctx_tokens': 107311, 'limit': 989980, 'kept_tokens': 107311, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:33 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:33 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:33 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'ICL-banking77', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 107311, 'limit': 172980, 'kept_tokens': 107311, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:33 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:33 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:33 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'ICL-banking77', 'model': 'gemini-2.0-flash', 'ctx_tokens': 107311, 'limit': 849980, 'kept_tokens': 107311, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:33 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:33 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:33 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 6 qa pairs
+{'dataset': 'DetQA', 'model': 'gpt-4o-mini', 'ctx_tokens': 101900, 'limit': 122000, 'kept_tokens': 101900, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:34 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:34 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:34 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 6 qa pairs
+{'dataset': 'DetQA', 'model': 'gpt-4.1-mini', 'ctx_tokens': 101900, 'limit': 988000, 'kept_tokens': 101900, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:34 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:34 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:34 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 6 qa pairs
+{'dataset': 'DetQA', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 101900, 'limit': 171000, 'kept_tokens': 101900, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:34 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:34 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:34 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 6 qa pairs
+{'dataset': 'DetQA', 'model': 'gemini-2.0-flash', 'ctx_tokens': 101900, 'limit': 848000, 'kept_tokens': 101900, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:34 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:34 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:34 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'model': 'gpt-4o-mini', 'ctx_tokens': 391743, 'limit': 122800, 'kept_tokens': 122800, 'frac_kept': 0.313, 'head_survives': False}
+10/15/2026 04:15:35 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:35 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:35 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'model': 'gpt-4.1-mini', 'ctx_tokens': 391743, 'limit': 988800, 'kept_tokens': 391743, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:36 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:36 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:36 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 391743, 'limit': 171800, 'kept_tokens': 171800, 'frac_kept': 0.439, 'head_survives': False}
+10/15/2026 04:15:37 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:37 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:37 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'model': 'gemini-2.0-flash', 'ctx_tokens': 391743, 'limit': 848800, 'kept_tokens': 391743, 'frac_kept': 1.0, 'head_survives': True}
+10/15/2026 04:15:37 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:37 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:37 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'model': 'gpt-4o-mini', 'ctx_tokens': 1497211, 'limit': 123700, 'kept_tokens': 123700, 'frac_kept': 0.083, 'head_survives': False}
+10/15/2026 04:15:40 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:41 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:41 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'model': 'gpt-4.1-mini', 'ctx_tokens': 1497211, 'limit': 989700, 'kept_tokens': 989700, 'frac_kept': 0.661, 'head_survives': False}
+10/15/2026 04:15:44 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:44 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:44 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'model': 'claude-3-7-sonnet-20250219', 'ctx_tokens': 1497211, 'limit': 172700, 'kept_tokens': 172700, 'frac_kept': 0.115, 'head_survives': False}
+10/15/2026 04:15:47 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:47 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:47 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'model': 'gemini-2.0-flash', 'ctx_tokens': 1497211, 'limit': 849700, 'kept_tokens': 849700, 'frac_kept': 0.568, 'head_survives': False}
+
+======== 3. Zep: share of each memorized chunk that reaches graph.add (content[:9998]) and thread (content[:2400]) ========
+10/15/2026 04:15:51 - INFO - conversation_creator - Running test on ruler_qa1_197K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:51 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:51 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: ruler_qa1_197K
+Loading ruler_qa1_197K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa1_197K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA1', 'chars_total': 994570, 'graph_frac': 0.503, 'thread_frac': 0.121}
+10/15/2026 04:15:51 - INFO - conversation_creator - Running test on ruler_qa2_421K
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:51 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:51 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: ruler_qa2_421K
+Loading ruler_qa2_421K from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 1 samples matching source 'ruler_qa2_421K' (from 22 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'RULER-QA2', 'chars_total': 1899531, 'graph_frac': 0.558, 'thread_frac': 0.134}
+10/15/2026 04:15:51 - INFO - conversation_creator - Running test on eventqa_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:51 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:51 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: eventqa_full
+Loading eventqa_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'eventqa_full' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'EventQA-full', 'chars_total': 2329112, 'graph_frac': 0.561, 'thread_frac': 0.135}
+10/15/2026 04:15:52 - INFO - conversation_creator - Running test on longmemeval_s*
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:52 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:52 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: longmemeval_s*
+Loading longmemeval_s* from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 22 samples from Accurate_Retrieval
+Filtered to 5 samples matching source 'longmemeval_s*' (from 22 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 60 qa pairs
+{'dataset': 'LME-S*', 'chars_total': 1620106, 'graph_frac': 0.54, 'thread_frac': 0.13}
+10/15/2026 04:15:52 - INFO - conversation_creator - Running test on factconsolidation_sh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:52 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:52 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: factconsolidation_sh_262k
+Loading factconsolidation_sh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_sh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-SH-262K', 'chars_total': 1131121, 'graph_frac': 0.59, 'thread_frac': 0.142}
+10/15/2026 04:15:53 - INFO - conversation_creator - Running test on factconsolidation_mh_262k
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:53 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:53 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: factconsolidation_mh_262k
+Loading factconsolidation_mh_262k from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 8 samples from Conflict_Resolution
+Filtered to 1 samples matching source 'factconsolidation_mh_262k' (from 8 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'FC-MH-262K', 'chars_total': 1131121, 'graph_frac': 0.59, 'thread_frac': 0.142}
+10/15/2026 04:15:54 - INFO - conversation_creator - Running test on icl_banking77_5900shot_balance
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:54 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:54 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: icl_banking77_5900shot_balance
+Loading icl_banking77_5900shot_balance from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'icl_banking77_5900shot_balance' (from 6 total)
+Dataset length: 1, each sample has 100 qa pairs
+{'dataset': 'ICL-banking77', 'chars_total': 409840, 'graph_frac': 0.634, 'thread_frac': 0.152}
+10/15/2026 04:15:54 - INFO - conversation_creator - Running test on detective_qa
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:54 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:54 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: detective_qa
+Loading detective_qa from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 10 samples matching source 'detective_qa' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 6 qa pairs
+{'dataset': 'DetQA', 'chars_total': 404511, 'graph_frac': 0.617, 'thread_frac': 0.148}
+10/15/2026 04:15:54 - INFO - conversation_creator - Running test on infbench_sum_eng_shots2
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:54 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:54 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: infbench_sum_eng_shots2
+Loading infbench_sum_eng_shots2 from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 110 samples from Long_Range_Understanding
+Filtered to 100 samples matching source 'infbench_sum_eng_shots2' (from 110 total)
+Subsampled to 1 samples
+Dataset length: 1, each sample has 1 qa pairs
+{'dataset': 'InfBench-Sum', 'chars_total': 1745736, 'graph_frac': 0.544, 'thread_frac': 0.131}
+10/15/2026 04:15:55 - INFO - conversation_creator - Running test on recsys_redial_full
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:55 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:55 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+
+
+Using agent-specific chunk_size: 4096
+
+
+Dataset: recsys_redial_full
+Loading recsys_redial_full from Hugging Face dataset: ai-hyz/MemoryAgentBench
+Loaded 6 samples from Test_Time_Learning
+Filtered to 1 samples matching source 'recsys_redial_full' (from 6 total)
+Dataset length: 1, each sample has 200 qa pairs
+{'dataset': 'Recsys', 'chars_total': 5737497, 'graph_frac': 0.632, 'thread_frac': 0.152}
+
+======== 4. Scoring behaviour of post_process on constructed outputs ========
+{'note': 'ICL, instructed format', 'output': 'label: 43', 'gold': ['43'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'ICL, bare number', 'output': '43', 'gold': ['43'], 'exact_match': 1.0, 'substring_exact_match': 1.0}
+{'note': 'ICL, wrong label', 'output': 'label: 17', 'gold': ['7'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'DetQA, demo JSON format', 'output': '{"answer":"C. The Brandt couple", "reasoning":"..."}', 'gold': ['C. The Brandt couple'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'DetQA, fenced JSON', 'output': '```json\n{"answer": "C. The Brandt couple"}\n```', 'gold': ['C. The Brandt couple'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'DetQA, bare option', 'output': 'C. The Brandt couple', 'gold': ['C. The Brandt couple'], 'exact_match': 1.0, 'substring_exact_match': 1.0}
+{'note': 'DetQA, correct option, gold lacks space', 'output': 'B. Hila Weber', 'gold': ['B.Hila Weber'], 'exact_match': 0.0, 'substring_exact_match': 0.0}
+{'note': 'FC, hedged old+new', 'output': 'Armenia (previously Argentina)', 'gold': ['Argentina'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'RULER yes/no gold, abstention', 'output': "I don't know", 'gold': ['no'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'RULER yes/no gold, abstention', 'output': 'Not mentioned in the documents', 'gold': ['no'], 'exact_match': 0.0, 'substring_exact_match': 1.0}
+{'note': 'RULER, opposite answer', 'output': 'Yes', 'gold': ['no'], 'exact_match': 0.0, 'substring_exact_match': 0.0}
+{'note': 'EventQA, no final period', 'output': 'Debbie waited for her father at the end of the driveway', 'gold': ['Debbie waited for her father at the end of the driveway.'], 'exact_match': 1.0, 'substring_exact_match': 1.0, 'eventqa_recall': 0.0}
+
+======== 5. Gold-label statistics (HF data) ========
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:56 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:56 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:57 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:57 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:57 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:57 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+10/15/2026 04:15:57 - WARNING - datasets.load - Using the latest cached version of the dataset since ai-hyz/MemoryAgentBench couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+10/15/2026 04:15:57 - WARNING - datasets.packaged_modules.cache.cache - Found the latest cached dataset configuration 'default' at $HOME/.cache/huggingface/datasets/ai-hyz___memory_agent_bench/default/0.0.0/7ea066982b140a19337e17e60d45d4076e042faf (last modified on Thu Oct 15 04:15:01 2026).
+ruler_qa1_197K {'questions': 100, 'gold_len_le3': 3}
+ruler_qa2_421K {'questions': 100, 'gold_yes_no': 12, 'gold_len_le3': 14, 'gold_substring_of_question': 6, 'all_golds_gt10_tokens': 2}
+eventqa_full {'questions': 500, 'gold_substring_of_question': 500, 'all_golds_gt10_tokens': 436, 'eventqa_n_options_6': 500}
+eventqa_65536 {'questions': 500, 'gold_substring_of_question': 500, 'all_golds_gt10_tokens': 459, 'eventqa_n_options_6': 500}
+eventqa_131072 {'questions': 500, 'gold_substring_of_question': 500, 'all_golds_gt10_tokens': 459, 'eventqa_n_options_6': 500}
+longmemeval_s* {'questions': 300, 'gold_len_le3': 71, 'gold_substring_of_question': 42, 'all_golds_gt10_tokens': 90, 'gold_yes_no': 5}
+factconsolidation_mh_6k {'questions': 100}
+factconsolidation_mh_32k {'questions': 100}
+factconsolidation_mh_64k {'questions': 100, 'gold_len_le3': 1}
+factconsolidation_mh_262k {'questions': 100, 'all_golds_gt10_tokens': 1}
+factconsolidation_sh_6k {'questions': 100}
+factconsolidation_sh_32k {'questions': 100, 'gold_len_le3': 1}
+factconsolidation_sh_64k {'questions': 100, 'gold_substring_of_question': 2}
+factconsolidation_sh_262k {'questions': 100, 'gold_len_le3': 1, 'all_golds_gt10_tokens': 1}
+infbench_sum_eng_shots2 {'questions': 100, 'all_golds_gt10_tokens': 100}
+detective_qa {'questions': 71, 'gold_substring_of_question': 71, 'detqa_gold_no_space_after_letter': 5, 'all_golds_gt10_tokens': 16}
+recsys_redial_full {'questions': 200, 'gold_len_le3': 4}
+icl_banking77_5900shot_balance {'questions': 100, 'gold_len_le3': 100, 'gold_substring_of_question': 1}
+icl_clinic150_7050shot_balance {'questions': 100, 'gold_len_le3': 100}
+icl_nlu_8296shot_balance {'questions': 100, 'gold_len_le3': 100}
+icl_trec_coarse_6600shot_balance {'questions': 100, 'gold_len_le3': 100, 'gold_substring_of_question': 3}
+icl_trec_fine_6400shot_balance {'questions': 100, 'gold_len_le3': 100}
+
+======== 6. Cognee search(): is the `datasets` filter able to drop GRAPH_COMPLETION results? ========
+filtered result: ['Argentina'] | datasets reached specific_search? False {'datasets': ['default_dataset_x_context_0'], 'specific_search_kwargs': ['system_prompt_path', 'top_k']}
+
+AUDIT CHECKS DONE

@@ -1,0 +1,224 @@
+{
+ "systems": [
+  "LC (GPT-4o-mini)",
+  "BM25",
+  "Contriever",
+  "Text-Embed-3",
+  "Qwen3-Emb",
+  "RAPTOR",
+  "GraphRAG",
+  "HippoRAG-v2",
+  "Self-RAG",
+  "Mem0",
+  "Cognee",
+  "Zep",
+  "MemGPT/Letta",
+  "knowl/TAM/agentmemory"
+ ],
+ "findings": [
+  {
+   "id": "A1",
+   "title": "Mem0 memorizes under context_None, searches context_i \u2192 retrieves nothing",
+   "kind": "isolation",
+   "confidence": "high (offline run)",
+   "affects": {
+    "Mem0": "all datasets"
+   }
+  },
+  {
+   "id": "A2",
+   "title": "Cognee search ignores dataset key \u2192 a query on context i also searches earlier contexts (0..i)",
+   "kind": "isolation",
+   "confidence": "high (code + stubbed run)",
+   "affects": {
+    "Cognee": "multi-context splits"
+   }
+  },
+  {
+   "id": "A3",
+   "title": "Zep reads a graph that was never created (graph_None written, graph_0 read)",
+   "kind": "isolation",
+   "confidence": "high (ids); failure mode unverified",
+   "affects": {
+    "Zep": "all datasets"
+   }
+  },
+  {
+   "id": "B1",
+   "title": "RAG chunk store silently drops oldest chunks above 250\u2013300K tokens",
+   "kind": "truncation",
+   "confidence": "high (measured)",
+   "affects": {
+    "Text-Embed-3": "RULER-QA2, EventQA, LME, Recsys",
+    "RAPTOR": "RULER-QA2, EventQA, LME, Recsys",
+    "GraphRAG": "RULER-QA2, EventQA, LME, Recsys",
+    "Self-RAG": "RULER-QA2, EventQA, LME, Recsys"
+   }
+  },
+  {
+   "id": "B2",
+   "title": "Long-context truncation keeps only the tail (128K models keep 8\u201361% of long main-tier contexts)",
+   "kind": "truncation",
+   "confidence": "high (measured)",
+   "affects": {
+    "LC (GPT-4o-mini)": "long splits"
+   }
+  },
+  {
+   "id": "B3",
+   "title": "Zep ingests only the first 9,998 chars of each chunk (~50\u201363% stored)",
+   "kind": "truncation",
+   "confidence": "high",
+   "affects": {
+    "Zep": "all datasets"
+   }
+  },
+  {
+   "id": "B4",
+   "title": "Retrieval/reader settings differ from configs (RAPTOR k=4 not 10; HippoRAG reader sees 5 of 10; fixed readers)",
+   "kind": "config",
+   "confidence": "high (code)",
+   "affects": {
+    "RAPTOR": "all",
+    "HippoRAG-v2": "all",
+    "Self-RAG": "all"
+   }
+  },
+  {
+   "id": "C1",
+   "title": "DetQA exact match \u22480 for answers in the prompted JSON format; 5/71 gold malformed",
+   "kind": "scoring",
+   "confidence": "high (offline)",
+   "affects": {
+    "LC (GPT-4o-mini)": "DetQA",
+    "BM25": "DetQA",
+    "Contriever": "DetQA",
+    "Text-Embed-3": "DetQA",
+    "Qwen3-Emb": "DetQA",
+    "RAPTOR": "DetQA",
+    "GraphRAG": "DetQA",
+    "HippoRAG-v2": "DetQA",
+    "Self-RAG": "DetQA",
+    "Mem0": "DetQA",
+    "Cognee": "DetQA",
+    "Zep": "DetQA",
+    "MemGPT/Letta": "DetQA",
+    "knowl/TAM/agentmemory": "DetQA"
+   }
+  },
+  {
+   "id": "C2",
+   "title": "ICL exact match rejects the instructed 'label: N' format",
+   "kind": "scoring",
+   "confidence": "high (README-acknowledged)",
+   "affects": {
+    "LC (GPT-4o-mini)": "ICL",
+    "BM25": "ICL",
+    "Contriever": "ICL",
+    "Text-Embed-3": "ICL",
+    "Qwen3-Emb": "ICL",
+    "RAPTOR": "ICL",
+    "GraphRAG": "ICL",
+    "HippoRAG-v2": "ICL",
+    "Self-RAG": "ICL",
+    "Mem0": "ICL",
+    "Cognee": "ICL",
+    "Zep": "ICL",
+    "MemGPT/Letta": "ICL",
+    "knowl/TAM/agentmemory": "ICL"
+   }
+  },
+  {
+   "id": "C3",
+   "title": "Substring match credits hedged FC answers and 'I don't know' vs gold 'no' (12/100 RULER-QA2); some systems have no output cap",
+   "kind": "scoring",
+   "confidence": "medium",
+   "affects": {
+    "Cognee": "FC (uncapped)",
+    "Zep": "FC (uncapped); QA2 abstention prompt",
+    "RAPTOR": "FC (uncapped)",
+    "MemGPT/Letta": "FC (uncapped)",
+    "Self-RAG": "FC (cap 1000)",
+    "HippoRAG-v2": "FC (cap 2048)",
+    "Mem0": "RULER-QA2 abstentions (empty memory)"
+   }
+  },
+  {
+   "id": "D1",
+   "title": "All 32 configs set temperature 0.7 (a few systems override it); scores are single runs",
+   "kind": "config",
+   "confidence": "high",
+   "affects": {
+    "LC (GPT-4o-mini)": "all",
+    "BM25": "all",
+    "Contriever": "all",
+    "Text-Embed-3": "all",
+    "Qwen3-Emb": "all",
+    "RAPTOR": "all",
+    "GraphRAG": "all",
+    "HippoRAG-v2": "all",
+    "Self-RAG": "all",
+    "Mem0": "all",
+    "Zep": "all",
+    "MemGPT/Letta": "all",
+    "knowl/TAM/agentmemory": "all"
+   }
+  },
+  {
+   "id": "E1",
+   "title": "LongMemEval judge uses unpinned gpt-4o; stale verdicts reused",
+   "kind": "judge",
+   "confidence": "high (code)",
+   "affects": {
+    "LC (GPT-4o-mini)": "LME(S*)",
+    "BM25": "LME(S*)",
+    "Contriever": "LME(S*)",
+    "Text-Embed-3": "LME(S*)",
+    "Qwen3-Emb": "LME(S*)",
+    "RAPTOR": "LME(S*)",
+    "GraphRAG": "LME(S*)",
+    "HippoRAG-v2": "LME(S*)",
+    "Self-RAG": "LME(S*)",
+    "Mem0": "LME(S*)",
+    "Cognee": "LME(S*)",
+    "Zep": "LME(S*)",
+    "MemGPT/Letta": "LME(S*)",
+    "knowl/TAM/agentmemory": "LME(S*)"
+   }
+  }
+ ],
+ "other_harnesses": [
+  {
+   "repo": "mem0ai/mem0 evaluation/ (last version aae5989e; folder empty at HEAD)",
+   "finding": "Zep baseline ingests only conversation 0 (zep/add.py:66 `if idx == 0:`) but searches all 10 users",
+   "confidence": "high (code, re-checked)"
+  },
+  {
+   "repo": "snap-research/locomo",
+   "finding": "444/1986 (22.4%) category-5 questions have no `answer` key; released scorers raise KeyError (consistent with ATANT 2604.10981)",
+   "confidence": "high (offline)"
+  },
+  {
+   "repo": "LoCoMo / LongMemEval baselines",
+   "finding": "truncation keeps the EARLIEST history (LoCoMo 7/19 sessions under 4k; LongMemEval oldest-first) \u2014 opposite of MAB's LC (keeps tail)",
+   "confidence": "high"
+  },
+  {
+   "repo": "LongMemEval judge",
+   "finding": "any reply containing 'yes' counts as correct; failed generations dropped from denominator",
+   "confidence": "high (code) / suspected (effect)"
+  }
+ ],
+ "claims_link": {
+  "claims_vs_mem0_cognee_zep": 15,
+  "rerun": 12,
+  "rerun_sources": [
+   "2605.18421",
+   "2606.06054",
+   "2606.06448",
+   "2607.27834",
+   "2608.04746",
+   "2610.11920"
+  ]
+ }
+}

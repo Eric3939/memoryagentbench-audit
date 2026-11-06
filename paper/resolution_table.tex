@@ -1,0 +1,15 @@
+\begin{table}[t]\centering\footnotesize
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+Split & $n$ & contexts & MDD$_{95}$ & MDD$_{80}$ & MDD$_{80}$ paired \\\midrule
+FactConsolidation (each length) & 100 & 1 & 13.9 & 19.8 & 8.9--12.5 \\
+RULER-QA1 / QA2 & 100 & 1 & 13.9 & 19.8 & 8.9--12.5 \\
+ICL (each set) & 100 & 1 & 13.9 & 19.8 & 8.9--12.5 \\
+DetectiveQA & 71 & 10 & 16.4 & 23.5 & 10.5--14.9 \\
+InfBench-Sum & 100 & 100 & 13.9 & 19.8 & 8.9--12.5 \\
+Recsys & 200 & 1 & 9.8 & 14.0 & 6.3--8.9 \\
+LME(S*) & 300 & 5 & 8.0 & 11.4 & 5.1--7.2 \\
+EventQA (one length) & 500 & 5 & 6.2 & 8.9 & 4.0--5.6 \\
+\bottomrule\end{tabular}
+\caption{Smallest accuracy gap (points) that MAB splits can resolve between two single runs at $p=0.5$: MDD$_{95}$ is significant half the time; MDD$_{80}$ gives 80\% power. The paired column assumes 10--20\% discordant items. Binomial approximation (InfBench-Sum and Recsys are graded metrics); clustering on few contexts makes all of these optimistic.}
+\label{tab:mdd}
+\end{table}

@@ -1,0 +1,12 @@
+external/
+results/
+logs/
+papers/pdf/
+paper/main.pdf
+paper/*.log
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+__pycache__/
+.DS_Store

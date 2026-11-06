@@ -1,0 +1,74 @@
+[
+ {
+  "split": "FactConsolidation (each length)",
+  "n": 100,
+  "contexts": 1,
+  "mdd95_unpaired": 13.9,
+  "mdd80_unpaired": 19.8,
+  "mdd80_paired_d10": 8.9,
+  "mdd80_paired_d20": 12.5
+ },
+ {
+  "split": "RULER-QA1 / QA2",
+  "n": 100,
+  "contexts": 1,
+  "mdd95_unpaired": 13.9,
+  "mdd80_unpaired": 19.8,
+  "mdd80_paired_d10": 8.9,
+  "mdd80_paired_d20": 12.5
+ },
+ {
+  "split": "ICL (each set)",
+  "n": 100,
+  "contexts": 1,
+  "mdd95_unpaired": 13.9,
+  "mdd80_unpaired": 19.8,
+  "mdd80_paired_d10": 8.9,
+  "mdd80_paired_d20": 12.5
+ },
+ {
+  "split": "DetectiveQA",
+  "n": 71,
+  "contexts": 10,
+  "mdd95_unpaired": 16.4,
+  "mdd80_unpaired": 23.5,
+  "mdd80_paired_d10": 10.5,
+  "mdd80_paired_d20": 14.9
+ },
+ {
+  "split": "InfBench-Sum",
+  "n": 100,
+  "contexts": 100,
+  "mdd95_unpaired": 13.9,
+  "mdd80_unpaired": 19.8,
+  "mdd80_paired_d10": 8.9,
+  "mdd80_paired_d20": 12.5
+ },
+ {
+  "split": "Recsys",
+  "n": 200,
+  "contexts": 1,
+  "mdd95_unpaired": 9.8,
+  "mdd80_unpaired": 14.0,
+  "mdd80_paired_d10": 6.3,
+  "mdd80_paired_d20": 8.9
+ },
+ {
+  "split": "LME(S*)",
+  "n": 300,
+  "contexts": 5,
+  "mdd95_unpaired": 8.0,
+  "mdd80_unpaired": 11.4,
+  "mdd80_paired_d10": 5.1,
+  "mdd80_paired_d20": 7.2
+ },
+ {
+  "split": "EventQA (one length)",
+  "n": 500,
+  "contexts": 5,
+  "mdd95_unpaired": 6.2,
+  "mdd80_unpaired": 8.9,
+  "mdd80_paired_d10": 4.0,
+  "mdd80_paired_d20": 5.6
+ }
+]
